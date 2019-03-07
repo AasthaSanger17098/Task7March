@@ -38,10 +38,11 @@ public class MainActivity extends AppCompatActivity {
         super.onResume();
         SharedPreferences sharedPreferences = getSharedPreferences("com.gla.task7march",MODE_PRIVATE);
         String s1 = sharedPreferences.getString("aastha.sanger+mca18@gla.ac.in","UserName");
+        String s2 = sharedPreferences.getString("123456","Password");
         Boolean remember = sharedPreferences.getBoolean("bool",false);
         Toast.makeText(this, "bool: "+remember, Toast.LENGTH_SHORT).show();
         editText3.setText(s1);
-        editText4.setText(s1);
+        editText4.setText(s2);
 
     }
 }
